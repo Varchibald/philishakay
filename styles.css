@@ -71,6 +71,7 @@ a:visited {
   font-family: UnifrakturMaguntia-Regular;
   height: 250px;
   vertical-align: middle;
+  text-shadow: none;
   background: -webkit-linear-gradient(#fc1cfc, #ffff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
