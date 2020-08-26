@@ -4,9 +4,24 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: GeostarFill-Regular;
+  src: url(./Fonts/GeostarFill-Regular.ttf);
+}
+
+@font-face {
+  font-family: UnifrakturMaguntia-Regular;
+  src: url(./Fonts/UnifrakturMaguntia-Regular.ttf);
+}
+
+@font-face {
+  font-family: Wallpoet-Regular;
+  src: url(./Fonts/Wallpoet-Regular.ttf);
+}
+
 body {
-  height: 100%;
-  font-size: 20px;
+	height: 100%;
+	font-size: 20px;
 	font-family: sans-serif;
 	color: #fc1cfc;
 	background-color: black;
@@ -34,6 +49,7 @@ a:visited {
 .menu > li {
   display: inline;
   padding: 10px 40px;
+  font-family: Wallpoet-Regular;
 }
 
 .menu > li:last-of-type {
@@ -53,6 +69,7 @@ a:visited {
   border: 1px solid #fc1cfc;
   margin-top: 10px;
   font-size: 60px;
+  font-family: UnifrakturMaguntia-Regular;
   height: 250px;
   vertical-align: middle;
 }
@@ -61,6 +78,7 @@ a:visited {
   border: 1px solid #fc1cfc;
   margin-top: 10px;
   font-size: 20px;
+font-family: GeostarFill-Regular;
   color: white;
   height: 250px;
   text-align: left;
