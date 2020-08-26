@@ -3,29 +3,29 @@ body {
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
 }
 
 body {
-  height: 1200px;
-  font-size: 18px;
-  font-family: sans-serif;
-  color: #fc1cfc;
+	height: 1200px;
+  	font-size: 18px;
+  	font-family: sans-serif;
+  	color: #fc1cfc;
 }
 
 a:link,
 a:visited {
-  color: #fc1cfc;
-  text-decoration: none;
+  	color: #fc1cfc;
+  	text-decoration: none;
 }
 
 .menu {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
+  	position: fixed;
+  	display: flex;
+  	justify-content: space-between;
   
-  width: 100%;
-  padding: 50px;
+  	width: 100%;
+  	padding: 50px;
 }
