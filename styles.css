@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-size: 20px;
+	font-family: sans-serif;
+	color: #fc1cfc;
+	background-color: black;
+}
+
+a:link,
+a:visited {
+	color: #fc1cfc;
+	text-decoration: none;
+}
+
+.container {
+  position:absolute;
+  top:200px;
+  bottom:0;
+  left:0;
+  right:0;
+  width:618px;
+  height:500px;
+  margin:auto;
+  text-align: center;
+  text-shadow: 0px 2px 2px #00b386;
+}
+
+.menu > li {
+  display: inline;
+  padding: 10px 40px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+
+.activePage {
+  border-top: 1px solid #fc1cfc;
+  border-left: 1px solid #fc1cfc;
+  border-right: 1px solid #fc1cfc;
+  border-bottom: 2px solid black;
+}
+
+.questionText {
+  padding: 50px;
+  text-align: center;
+  border: 1px solid #fc1cfc;
+  margin-top: 10px;
+  font-size: 60px;
+  height: 250px;
+  vertical-align: middle;
+}
+
+.text {
+  border: 1px solid #fc1cfc;
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+  height: 250px;
+  text-align: left;
+}
+
+.slideshow {
+  border: 1px solid #fc1cfc;
+  margin-top: 10px;
+  padding: 20px 0;
+  height: 250px;
+  text-align: center;
+}
+
+img {
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  color: #fc1cfc;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 70px;
+}
+.prev {
+  left: 70px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
