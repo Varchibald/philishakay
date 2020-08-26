@@ -110,7 +110,7 @@ img {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 35%;
   width: auto;
   color: #fc1cfc;
   font-size: 24px;
