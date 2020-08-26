@@ -1,7 +1,10 @@
+body {
+	background-color: black;
+}
 .videoResponsive {
 	padding-bottom:56.25%;
-  height:0;
-  position:relative;
+ 	height:0;
+  	position:relative;
 	padding-top:30px;
 	overflow:hidden;
 }
@@ -10,7 +13,7 @@
 .videoResponsive embed {
 	position:absolute;
 	left:0;
-  top:0;
+  	top:0;
 	width:100%;
 	height:100%;
 }
