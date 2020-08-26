@@ -18,11 +18,14 @@ a:visited {
   	text-decoration: none;
 }
 
-.menu {
+.
+
+.header {
   	position: fixed;
   	display: flex;
   	justify-content: space-between;
   
   	width: 100%;
+	height: auto;
   	padding: 50px;
 }
