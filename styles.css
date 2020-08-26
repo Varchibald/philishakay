@@ -6,17 +6,17 @@
 
 @font-face {
   font-family: GeostarFill-Regular;
-  src: url(./Fonts/GeostarFill-Regular.ttf);
+  src: url(/Fonts/GeostarFill-Regular.ttf);
 }
 
 @font-face {
   font-family: UnifrakturMaguntia-Regular;
-  src: url(./Fonts/UnifrakturMaguntia-Regular.ttf);
+  src: url(/Fonts/UnifrakturMaguntia-Regular.ttf);
 }
 
 @font-face {
   font-family: Wallpoet-Regular;
-  src: url(./Fonts/Wallpoet-Regular.ttf);
+  src: url(/Fonts/Wallpoet-Regular.ttf);
 }
 
 body {
