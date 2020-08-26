@@ -34,11 +34,11 @@ a:visited {
 
 .container {
   position:absolute;
-  top:200px;
+  top:0;
   bottom:0;
   left:0;
   right:0;
-  width:658px;
+  width:750px;
   height:300px;
   margin:auto;
   text-align: center;
