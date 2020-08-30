@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>PHILISHA KAY</title>
+    <link rel='stylesheet' href='../styles.css'/>
+  </head>
+
+  <body>
+    <div class='container'>
+      <ul class='menu'>
+        <li><a href='../home'>question</a></li>
+        <li><a href='../define'>define</a></li>
+        <li class='activePage'><a href='../explore'>explore</a></li>
+        <li><a href='../approach'>approach</a></li>
+      </ul>
+      <div class='slideshow'>
+          <img class="slides fade" src="../naked.jpg">
+          <img class="slides fade" src="../nails.jpg">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <script>
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+
+    </script>
+
+  </body>
+</html>
