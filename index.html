@@ -2,6 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHILISHA KAY</title>
     <link rel='stylesheet' href='./styles.css'/>
   </head>
@@ -9,10 +10,10 @@
   <body>
     <div class='container'>
       <ul class='menu'>
-        <li class='activePage'><a id='homePage' href='./home'>home</a></li>
-        <li><a href='./bio'>bio</a></li>
-        <li><a href='./projects'>projects</a></li>
-        <li><a href='./contact'>contact</a></li>
+        <li class='activePage'><a href="javascript:void(0);" class="invis" onclick="unroll()"><a id='homePage' href='./home'>home</a></a></li>
+        <li><a id='bioPage' href='./bio'>bio</a></li>
+        <li><a id='projectsPage' href='./projects'>projects</a></li>
+        <li><a id='contactPage' href='./contact'>contact</a></li>
       </ul>
       <div class="main">
         <img class="imgHome" src="./home.jpg">
@@ -21,5 +22,6 @@
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

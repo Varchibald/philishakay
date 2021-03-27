@@ -22,7 +22,7 @@
 
 body {
 	height: 100%;
-	font-size: 35px;
+	font-size: 1.8vw;
 	color: #fc1cfc;
 	background-color: black;
 }
@@ -58,19 +58,19 @@ a:visited {
   box-shadow: 1px 2px 6px 1px #00b386;
 }
 
-#homePage {
+.activePage #homePage {
   color: #00ffff;
 }
 
-#bioPage {
+.activePage #bioPage {
   color: #ff00ff;
 }
 
-#projectsPage {
+.activePage #projectsPage {
   color: #ffff00;
 }
 
-#contactPage {
+.activePage #contactPage {
   color: #0000ff;
 }
 
@@ -99,8 +99,8 @@ a:visited {
 .home {
   position: absolute;
   left: 5%;
-  bottom: 25%;
-  font-size: 80px;
+  top: 65%;
+  font-size: 4.2vw;
   letter-spacing: -5px;
   transform: scale(1, 4);
   filter: drop-shadow(1px 3px 2px #00b386);
@@ -111,6 +111,7 @@ a:visited {
 
 .imgHome {
   width: 100%;
+  max-height: 85%;
   box-shadow: inset 0px 0px 4px black;
 }
 
@@ -124,22 +125,24 @@ a:visited {
 }
 
 .bio {
-  flex: 2.5;
+  flex: 4;
   color: white;
-  font-size: 25px;
+  font-size: 1.3vw;
   padding: 60px 60px;
   text-align: justify;
 }
 
 .imgBio {
   flex: 1;
+  max-width: 30%;
+  object-fit: cover;
 }
 
 /* PROJECTS */
 
 .text {
   color: white;
-  font-size: 22px;
+  font-size: 1.14vw;
   text-align: justify;
 }
 
@@ -152,18 +155,22 @@ a:visited {
 
 .wrapper {
   flex: 1;
-  padding: 0px 80px;
+  padding: 0px 0px 0px 80px;
 }
 
 .imgProjectsWrapper {
   flex: 1;
   display: flex;
+  padding-left: 5%;
 }
 
 .newNow {
   font-family: GeostarFill-Regular;
-  font-size: 90px;
-  margin-top: -20px;
+  font-size: 4.7vw;
+  margin-top: -3%;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: ellipsis;
   filter: drop-shadow(5px 10px 6px #00b386);
   background: linear-gradient(yellow, white);
   -webkit-background-clip: text;
@@ -171,17 +178,16 @@ a:visited {
 }
 
 .imgNewNow {
-  margin: auto;
-  margin-right: 25%;
-  width: 90%;
+  margin: auto auto auto 0%;
+  width: 85%;
   height: auto;
 
 }
 
 .face {
   font-family: GeostarFill-Regular;
-  font-size: 150px;
-  margin-top: -50px;
+  font-size: 9vw;
+  margin-top: -8%;
   transform: scale(1, 0.7);
   filter: drop-shadow(5px 10px 6px #00b386);
   background: linear-gradient(to right, #fc1cfc, yellow);
@@ -191,13 +197,17 @@ a:visited {
 
 .imgFace {
   height: 85%;
+  max-width: 100%;
   align-self: flex-end;
 }
 
 .hotMess {
   font-family: GeostarFill-Regular;
-  font-size: 85px;
-  margin-top: -20px;
+  font-size: 4.6vw;
+  margin-top: -3%;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: ellipsis;
   filter: drop-shadow(5px 10px 6px #00b386);
   background: linear-gradient(to right, #800000, #9900FF);
   -webkit-background-clip: text;
@@ -206,6 +216,7 @@ a:visited {
 
 .imgHotMess {
   height: 85%;
+  max-width: 100%;
   align-self: flex-end;
 }
 
@@ -218,9 +229,9 @@ a:visited {
 
 .own {
   font-family: GeostarFill-Regular;
-  font-size: 150px;
-  margin-top: -50px;
-  margin-bottom: -50px;
+  font-size: 9vw;
+  margin-top: -9%;
+  margin-bottom: -8%;
   transform: scale(1, 0.7);
   filter: drop-shadow(5px 10px 6px #00b386);
   background: linear-gradient(to right, #9900FF, #00ffff);
@@ -238,7 +249,7 @@ a:visited {
 .contact {
   flex: 2;
   color: white;
-  font-size: 30px;
+  font-size: 1.5vw;
   align-self: flex-end;
   padding-bottom: 5%;
   padding-left: 1%;
@@ -246,7 +257,10 @@ a:visited {
 
 .imgContact {
   flex: 1;
-  height: 80%;
+  height: 90%;
+  max-width: 50%;
+  object-fit: cover;
+  object-position: 100% 0;
   align-self: flex-end;
 }
 
@@ -257,7 +271,6 @@ a:visited {
   height: 100%;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -270,7 +283,6 @@ a:visited {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   text-align: left;
   right: 3%;
@@ -280,12 +292,10 @@ a:visited {
   left: 3%;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   color: white;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -303,7 +313,204 @@ a:visited {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+/* MOBILE MENU */
+
+@media screen and (max-width: 600px) {
+
+  .menu li:not(.activePage) {
+    display: none;
+  }
+
+  .activePage {
+    position: relative;
+    font-size: 20px;
+    border: none;
+    background-color: none;
+    box-shadow: none;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .menu {
+    position: absolute;
+    flex-direction: column;
+    font-size: 20px;
+    top: -30px;
+    margin-bottom: 0px;
+    width: auto;
+    border: 2px solid #fc1cfc;
+    background-color: black;
+    text-shadow: none;
+    box-shadow: 1px 2px 6px 1px #00b386;
+    z-index: 5;
+  }
+
+  .container {
+    top: 8%;
+    left: 5%;
+    width: 90%;
+  }
+
+  .main {
+    padding-bottom: 10%;
+    overflow: scroll;
+    z-index: 3;
+  }
+
+  #homePage {
+    color: #00ffff;
+  }
+
+  #bioPage {
+    color: #ff00ff;
+  }
+
+  #projectsPage {
+    color: #ffff00;
+  }
+
+  #contactPage {
+    color: #0000ff;
+  }
+
+}
+
+.invis {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .invis {
+    display: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* MOBILE HOME */
+
+@media screen and (max-width: 600px) {
+
+  .imgHome {
+    position: absolute;
+    left: -350px;
+    height: 60%;
+    width: auto;
+    padding-top: 18%;
+    z-index: -1;
+  }
+
+  .home {
+    top: 70%;
+    font-size: 45px;
+    left: 10%;
+  }
+
+}
+
+/* MOBILE BIO */
+
+@media screen and (max-width: 600px) {
+
+  .bio {
+    font-size: 15px;
+    padding: 60px 20px;
+    text-align: left;
+  }
+
+  .gradient1 {
+    display: block;
+    z-index: -3;
+  }
+
+  .imgBio {
+    height: 600px;
+    max-width: 100%;
+    z-index: -2;
+  }
+
+}
+
+/* MOBILE PROJECTS */
+
+@media screen and (max-width: 600px) {
+
+  .gradient2 {
+    flex-direction: column;
+    z-index: -1;
+  }
+
+  .gradient3 {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    padding: 60px 10px 0px 15px;
+  }
+
+  .imgProjectsWrapper {
+    padding: 0;
+  }
+
+  .text {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .prev, .next {
+    top: 40%;
+    font-size: 40px;
+  }
+
+  .newNow {
+    font-size: 40px;
+  }
+
+  .face {
+    font-size: 75px;
+  }
+
+  .hotMess {
+    font-size: 40px;
+  }
+
+  .own {
+    font-size: 80px;
+    padding-bottom: 15px;
+  }
+
+  .imgFace, .imgHotMess {
+    width: 100%;
+  }
+
+  .imgOwn {
+    width: 100%;
+    padding-top: 15px;
+  }
+}
+
+/* MOBILE CONTACT */
+
+@media only screen and (max-width: 600px) {
+
+  .imgContact {
+    position: absolute;
+    height: 50%;
+    width: auto;
+    max-width: none;
+    padding-top: 18%;
+    z-index: 1;
+    align-self: center;
+  }
+
+  .contact {
+    font-size: 18px;
+    margin-top: 125%;
+    padding-left: 0;
+    align-self: center;
+  }
+
 }
