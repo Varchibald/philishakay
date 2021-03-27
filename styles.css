@@ -404,12 +404,12 @@ a:visited {
     left: -80%;
     height: 50%;
     width: auto;
-    margin-top: 15%;
+    margin-top: 13%;
     z-index: -1;
   }
 
   .home {
-    top: 65%;
+    top: 68%;
     font-size: 12vw;
     left: 10%;
   }
@@ -518,7 +518,7 @@ a:visited {
     height: 40%;
     width: auto;
     max-width: none;
-    margin-top: 10%;
+    margin-top: 13%;
     z-index: 1;
     align-self: center;
   }
