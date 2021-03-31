@@ -359,6 +359,8 @@ a:visited {
   .main {
     padding-bottom: 0;
     overflow: scroll;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
     z-index: 3;
   }
 
