@@ -447,7 +447,6 @@ a:visited {
 @media screen and (max-width: 600px) {
 
   .gradient2 {
-    position: relative;
     overflow: auto;
     flex-direction: column;
     z-index: -1;
@@ -526,8 +525,8 @@ a:visited {
   }
 
   .contact {
-    position: absolute;
-    bottom: 3%;
+    position: relative;
+    top: 65%;
     flex: none;
     font-size: 4.5vw;
     padding-left: 0;
