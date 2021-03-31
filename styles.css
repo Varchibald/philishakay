@@ -103,9 +103,11 @@ a:visited {
 /* HOME */
 
 .home {
-  position: absolute;
+  display: inline-block;
+  position: relative;
   left: 5%;
-  top: 65%;
+  top: -5%;
+  width: auto;
   font-size: 4.2vw;
   letter-spacing: -5px;
   transform: scale(1, 4);
@@ -417,9 +419,9 @@ a:visited {
   }
 
   .home {
-    top: 68%;
+    top: 73%;
     font-size: 12vw;
-    left: 10%;
+    left: 8%;
   }
 
 }
