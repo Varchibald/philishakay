@@ -333,7 +333,7 @@ a:visited {
  font-size: 0.98vw;
  background-color: black;
  border: 2px solid #0000ff75;
- margin: 5% auto; /* 15% from the top and centered */
+ margin: 5% auto;
  padding: 20px;
  width: 80%; /* Could be more or less, depending on screen size */
 }
@@ -613,18 +613,36 @@ a:visited {
     height: 30%;
     width: auto;
     max-width: none;
-    margin-top: 13%;
-    z-index: 1;
+    margin-top: 8%;
+    z-index: -1;
     align-self: center;
   }
 
   .contact {
     position: relative;
-    top: 50%;
+    top: 47%;
     flex: none;
     font-size: 4vw;
     padding-left: 0;
     align-self: center;
+  }
+
+  #imprintModal {
+    z-index: 6;
+    overflow: scroll;
+  }
+
+  .modal-content {
+   font-size: 3vw;
+  }
+
+  .close {
+   font-size: 7vw;
+  }
+
+  .TXTME {
+    top: 0;
+    font-size: 7vw;
   }
 
 }
